@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>メルカリ</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="left-nav">
+        <svg
+          class="mercari-logo"
+          viewBox="0 0 182 49"
+          width="182"
+          height="49"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          role="img"
+        >
+          <title>メルカリ</title>
+          <g id="mercari-logo">
+            <path
+              fill="#ff0211"
+              fill-rule="evenodd"
+              d="M42.65,14.15l0,21a3.55,3.55,0,0,1-2,3.17l-17.8,8.59a3.54,3.54,0,0,1-3.08,0L9.25,41.82,2,38.27A3.51,3.51,0,0,1,0,35.1l0-21a3.5,3.5,0,0,1,2-3.14L19.79,2.07a3.55,3.55,0,0,1,3.16,0L40.71,11A3.53,3.53,0,0,1,42.65,14.15Z"
+            ></path>
+            <rect
+              fill="var(--component-mercari-logo-text-color)"
+              x="177.42"
+              y="17.11"
+              width="4.35"
+              height="18.64"
+            ></rect>
+            <path
+              fill="var(--component-mercari-logo-text-color)"
+              d="M130.76,32.16c-3.66,0-5.8-2.27-5.8-5.45s1.65-5.72,5.5-5.72a13.13,13.13,0,0,1,5.73,1.37V18.29a15,15,0,0,0-5.81-1.19c-5.92,0-9.69,4.08-9.69,9.61s4.11,9.19,10,9.19a15.89,15.89,0,0,0,5.92-1.18v-4A15,15,0,0,1,130.76,32.16Z"
+            ></path>
+            <path
+              fill="var(--component-mercari-logo-text-color)"
+              d="M74,17.11A7,7,0,0,0,68.14,20a7.39,7.39,0,0,0-6-2.89c-4.74,0-8,3.58-8,8.33V35.75h4.29V25c0-2.28,1.38-4,3.72-4A3.76,3.76,0,0,1,66,25V35.75h4.21V25A3.7,3.7,0,0,1,74,21a3.79,3.79,0,0,1,3.91,4V35.75h4.29V25.44A8,8,0,0,0,74,17.11Z"
+            ></path>
+            <circle
+              fill="var(--component-mercari-logo-text-color)"
+              cx="179.59"
+              cy="12.66"
+              r="2.41"
+            ></circle>
+            <path
+              fill="var(--component-mercari-logo-text-color)"
+              d="M149.47,17.11A9.12,9.12,0,0,0,140,26.49c0,5.52,3.73,9.38,9.06,9.38a5.84,5.84,0,0,0,5.41-3.16v3h4.28V26.49C158.76,20.8,155.17,17.11,149.47,17.11Zm0,15c-3.15,0-5.11-2.15-5.11-5.62,0-3.2,2.2-5.61,5.11-5.61,3.1,0,5,2.2,5,5.61C154.44,29.21,152.74,32.11,149.43,32.11Z"
+            ></path>
+            <path
+              fill="var(--component-mercari-logo-text-color)"
+              d="M116.31,21c-2.35,0-3.73,1.95-3.73,4.54V35.75h-4.29V25.44c0-4.75,3.27-8.33,8-8.33h1.55V21Z"
+            ></path>
+            <path
+              fill="var(--component-mercari-logo-text-color)"
+              d="M171.45,21c-2.35,0-3.73,1.95-3.73,4.54V35.75h-4.29V25.44c0-4.75,3.27-8.33,8-8.33H173V21Z"
+            ></path>
+            <path
+              fill="var(--component-mercari-logo-text-color)"
+              d="M95.46,17.1a9.16,9.16,0,0,0-9.24,9.43c0,5.86,4.2,9.34,10,9.34A20.69,20.69,0,0,0,103,34.68V30.92a20.17,20.17,0,0,1-6.58,1.41C93.2,32.33,91,30.9,90.54,28h13a15.14,15.14,0,0,0,.13-2.07A8.54,8.54,0,0,0,95.46,17.1Zm-4.88,7.54a4.76,4.76,0,0,1,9.39,0Z"
+            ></path>
+            <circle fill="#4dc9ff" cx="36.03" cy="14.65" r="9.56"></circle>
+            <path
+              fill="#fff"
+              d="M5.87,32.15,4,31.23V25.7c0-1.62.91-3.24,2.79-3.05a4.75,4.75,0,0,1,3.54,2.75,2.4,2.4,0,0,1,2.13-.6c1,.13,4.59,1.48,4.59,6.39V37.7l-2.05-1V30.58a3.25,3.25,0,0,0-2.57-3.44c-.61-.06-1.14.43-1.15,1.48s0,6.21,0,6.21L9.4,33.91V28.12c0-2.55-1.65-3.34-2.37-3.42-.41,0-1.16.21-1.16,1.52Z"
+            ></path>
+          </g>
+        </svg>
+        <form
+          class="search-form"
+          action="http://localhost:3000/submit-form"
+          method="POST"
+        >
+          <!-- <label for="search">Search</label> -->
+          <input
+            class="search-input"
+            type="text"
+            id="search"
+            name="search"
+            placeholder="何をお探しですか？"
+          />
+          <button type="button">
+            <svg width="20" height="20" fill-rule="evenodd" viewBox="0 0 24 24">
+              <path
+                d="M20.79,19.8l-3.94-3.94a7.86,7.86,0,1,0-1,1l3.94,3.94a.7.7,0,0,0,.5.21.67.67,0,0,0,.49-.21A.69.69,0,0,0,20.79,19.8ZM6.28,15.39a6.44,6.44,0,1,1,9.11,0,6.43,6.43,0,0,1-9.11,0Z"
+              ></path>
+            </svg>
+          </button>
+        </form>
+      </nav>
+      <nav class="right-nav">
+        <div class="user">
+          <img
+            class="user-image"
+            src="https://static.mercdn.net/images/member_photo_noimage_thumb.png"
+            alt="user"
+            width="30"
+            height="30"
+          />
+          <div>UserName</div>
+        </div>
+        <svg width="24" height="24" fill-rule="evenodd" viewBox="0 0 24 24">
+          <path
+            d="M12,21a.68.68,0,0,1-.48-.19C10.68,20,3.3,13,2.34,10.41a5.4,5.4,0,0,1,.17-4.19,5.56,5.56,0,0,1,3.2-2.89A5.65,5.65,0,0,1,12,5.09a5.66,5.66,0,0,1,6.29-1.76,5.56,5.56,0,0,1,3.2,2.89,5.4,5.4,0,0,1,.17,4.19c-1,2.58-8.34,9.61-9.18,10.4A.68.68,0,0,1,12,21ZM7.61,4.4a4.18,4.18,0,0,0-1.43.25,4.13,4.13,0,0,0-2.4,2.16,4,4,0,0,0-.12,3.11c.66,1.81,5.86,7,8.34,9.41,2.48-2.38,7.68-7.6,8.34-9.41a4,4,0,0,0-.12-3.11,4.13,4.13,0,0,0-2.4-2.16h0a4.24,4.24,0,0,0-5.2,2,.73.73,0,0,1-1.24,0A4.24,4.24,0,0,0,7.61,4.4Z"
+          ></path>
+        </svg>
+        <div class="bell-icon">
+          <svg width="24" height="24" fill-rule="evenodd" viewBox="0 0 24 24">
+            <path
+              d="M20.35,16h0L17.9,14a.28.28,0,0,1-.11-.23V9.25A5.76,5.76,0,0,0,14.2,3.94a2.22,2.22,0,0,0-4.4,0A5.76,5.76,0,0,0,6.21,9.25V13.8A.28.28,0,0,1,6.1,14L3.65,16A1.7,1.7,0,0,0,4.7,19H8.32a3.76,3.76,0,0,0,7.36,0H19.3a1.7,1.7,0,0,0,1.05-3ZM12,20.6A2.35,2.35,0,0,1,9.76,19h4.48A2.35,2.35,0,0,1,12,20.6Zm7.58-3.19a.28.28,0,0,1-.28.2H4.7a.28.28,0,0,1-.28-.2.27.27,0,0,1,.1-.33L7,15.13a1.68,1.68,0,0,0,.64-1.33V9.25a4.39,4.39,0,0,1,8.78,0V13.8A1.68,1.68,0,0,0,17,15.13l2.45,1.95A.27.27,0,0,1,19.58,17.41Z"
+            ></path>
+          </svg>
+          <div class="notification-badge">3</div>
+        </div>
+
+        <svg width="24" height="24" fill-rule="evenodd" viewBox="0 0 24 24">
+          <path
+            d="M9.3,19.5a2,2,0,0,1-1.44-.61L2.2,13.11a.68.68,0,0,1,0-1l1.88-1.93a.74.74,0,0,1,1,0L9.3,14.52l9.62-9.81a.71.71,0,0,1,.5-.21h0a.71.71,0,0,1,.5.21L21.8,6.63a.69.69,0,0,1,0,1L10.74,18.89A2,2,0,0,1,9.3,19.5ZM3.68,12.62l5.18,5.29a.61.61,0,0,0,.88,0L20.32,7.12l-.9-.92L9.8,16a.67.67,0,0,1-.5.21h0A.67.67,0,0,1,8.8,16L4.58,11.7Z"
+          ></path>
+        </svg>
+        <button class="listing-button" type="button">出品</button>
+      </nav>
+    </header>
+    <div class="content-container">
+      <img
+        class="recomend-image"
+        width="100%"
+        src="https://web-jp-assets-v2.mercdn.net/_next/static/media/line.e51e573c.jpg"
+        alt="recomend"
+      />
+
+      <h3 class="heading">閲覧した商品からのおすすめ</h3>
+
+      <div class="category-container">
+        <div class="maker">
+          <div class="maker-text">ムーブ</div>
+          <div class="maker-category">車 > 国内自動車本体</div>
+        </div>
+        <a class="category-link" href="###">すべて見る ></a>
+      </div>
+
+      <div class="product">
+        <img
+          class="grid-item"
+          src="https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/0d3d339e4d6923997adb060691927523"
+          alt="image"
+        />
+        <img
+          class="grid-item"
+          src="https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/0d3d339e4d6923997adb060691927523"
+          alt="image"
+        />
+        <img
+          class="grid-item"
+          src="https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/0d3d339e4d6923997adb060691927523"
+          alt="image"
+        />
+        <img
+          class="grid-item"
+          src="https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/0d3d339e4d6923997adb060691927523"
+          alt="image"
+        />
+        <img
+          class="grid-item"
+          src="https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/0d3d339e4d6923997adb060691927523"
+          alt="image"
+        />
+        <img
+          class="grid-item"
+          src="https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/0d3d339e4d6923997adb060691927523"
+          alt="image"
+        />
+        <img
+          class="grid-item"
+          src="https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/0d3d339e4d6923997adb060691927523"
+          alt="image"
+        />
+        <img
+          class="grid-item"
+          src="https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/0d3d339e4d6923997adb060691927523"
+          alt="image"
+        />
+        <img
+          class="grid-item"
+          src="https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/0d3d339e4d6923997adb060691927523"
+          alt="image"
+        />
+        <img
+          class="grid-item"
+          src="https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/0d3d339e4d6923997adb060691927523"
+          alt="image"
+        />
+        <img
+          class="grid-item"
+          src="https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/0d3d339e4d6923997adb060691927523"
+          alt="image"
+        />
+        <img
+          class="grid-item"
+          src="https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/0d3d339e4d6923997adb060691927523"
+          alt="image"
+        />
+        <img
+          class="grid-item"
+          src="https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/0d3d339e4d6923997adb060691927523"
+          alt="image"
+        />
+        <img
+          class="grid-item"
+          src="https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/0d3d339e4d6923997adb060691927523"
+          alt="image"
+        />
+      </div>
+    </div>
+  </body>
+</html>

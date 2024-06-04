@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+.sidebar-container {
+  position: fixed;
+  background-color: black;
+  width: 15rem;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  height: 3rem;
+  border-radius: 10px;
+  color: white;
+  margin: 0.5rem;
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+
+.content:hover {
+  background-color: #333;
+}
+
+.container {
+  padding-top: 4rem; /* ヘッダーの高さ分パディングを追加します */
+  width: 60%; /* 10% (left) + 80% (container) + 10% (right) = 100% */
+  margin: 0 auto; /* Center the container horizontally */
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: white;
+  width: 100%;
+}
